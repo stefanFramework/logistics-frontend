@@ -6,8 +6,8 @@ function StatusIcon(props) {
   const status = props.status;
 
   if (status == STATUS_ENABLED) {
-    return <CheckIcon className="h-5 w-5text-green-500 item" />;
+    return <CheckIcon className="h-5 w-5text-green-500 item status" />;
   }
-  return <BanIcon className="h-3 w-3 text-red-500 item" />;
+  return <BanIcon className="h-3 w-3 text-red-500 item status" />;
 }
 export default StatusIcon;

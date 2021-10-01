@@ -30,6 +30,11 @@ const GlobalStyle = createGlobalStyle`
   .item {
     flex: 1 0 25%;
   }
+  .status {
+    width: 24px;
+    heigth:24px;
+    line-height:1;
+  }
 `;
 
 export default GlobalStyle;
