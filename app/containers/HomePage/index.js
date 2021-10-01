@@ -32,6 +32,7 @@ import { changeUsername } from './actions';
 import { makeSelectUsername } from './selectors';
 import reducer from './reducer';
 import saga from './saga';
+import HeaderLink from '../../components/Header/HeaderLink';
 
 const key = 'home';
 
@@ -60,7 +61,7 @@ export function HomePage({
   return (
     <article>
       <Helmet>
-        <title>Home Page</title>
+        <title>Logistic Frontend</title>
         <meta
           name="description"
           content="A React.js Boilerplate application homepage"
@@ -69,17 +70,25 @@ export function HomePage({
       <div>
         <CenteredSection>
           <H2>
+          <FormattedMessage {...messages.titleHome} />
+          </H2>  
+          {/* <H2>
             <FormattedMessage {...messages.startProjectHeader} />
           </H2>
           <p>
             <FormattedMessage {...messages.startProjectMessage} />
-          </p>
+          </p> */}
+           <HeaderLink to="/carriers">
+          <FormattedMessage {...messages.carriers} />
+        </HeaderLink>
         </CenteredSection>
         <Section>
-          <H2>
+
+
+          {/* <H2>
             <FormattedMessage {...messages.trymeHeader} />
-          </H2>
-          <Form onSubmit={onSubmitForm}>
+          </H2> */}
+          {/* <Form onSubmit={onSubmitForm}>
             <label htmlFor="username">
               <FormattedMessage {...messages.trymeMessage} />
               <AtPrefix>
@@ -93,7 +102,7 @@ export function HomePage({
                 onChange={onChangeUsername}
               />
             </label>
-          </Form>
+          </Form> */}
           <ReposList {...reposListProps} />
         </Section>
       </div>

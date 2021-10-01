@@ -39,6 +39,8 @@ export default function RulesPage({
         <meta name="description" content="Rules" />
       </Helmet>
       <H1>Rules</H1>
+      <a href="/carriers"> Volver</a>
+
       <RulesList {...rulesListProps} />
     </div>
   );

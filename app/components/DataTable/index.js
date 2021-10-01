@@ -3,7 +3,7 @@ import DataTableRow from '../DataTableRow';
 
 export const DataTable = ({heading, data}) => {
   return (
-    <table style={{ width: 500}}>
+    <table style={{ width: '100%', border: '1px solid black', textAlign:'center', borderRadius: '5px', borderCollapse: 'none'}}>
       <thead>
         <tr>
           {heading.map(head => (

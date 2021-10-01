@@ -7,20 +7,19 @@ import NavBar from './NavBar';
 import HeaderLink from './HeaderLink';
 import Banner from './banner.jpg';
 import messages from './messages';
+import Logo from './logo-troca.png';
 
 function Header() {
   return (
     <div>
-      <A href="https://www.reactboilerplate.com/">
-        <Img src={Banner} alt="react-boilerplate - Logo" />
+      <A href="https://www.trocafone.com">
+        <Img src={Logo} alt="react-boilerplate - Logo" className="logo" />
       </A>
       <NavBar>
-        <HeaderLink to="/">
+       {/*  <HeaderLink to="/">
           <FormattedMessage {...messages.home} />
-        </HeaderLink>
-        <HeaderLink to="/features">
-          <FormattedMessage {...messages.features} />
-        </HeaderLink>
+        </HeaderLink> */}
+       
       </NavBar>
     </div>
   );

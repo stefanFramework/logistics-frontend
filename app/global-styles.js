@@ -35,6 +35,11 @@ const GlobalStyle = createGlobalStyle`
     heigth:24px;
     line-height:1;
   }
+  .logo{
+    width: 24px;
+    heigth:24px;
+    line-height:1;
+  }
 `;
 
 export default GlobalStyle;
